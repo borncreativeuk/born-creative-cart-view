@@ -42,16 +42,18 @@ function get_carts_information()
             //     // we have a cart
             //     // show it
             //     echo '<pre>' . print_r($datas->cart, true) . '</pre>';
-            echo '<pre>';
+            echo '<tr><td><pre>';
             print_r($cart);
-            echo '</pre>';
+            echo '</pre></td><td></td></tr>';
 
             $key_name = array_keys($cart);
-            
+          
+            echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
+
             // $product = wc_get_product( $cart[$key_name[0]]);
-        
+
             // echo "<tr><td>" $product->get_name() . "</td><td>" .$cart[$key_name[0]]['quantity'] . "</td></tr>" ;
-           
+
 
         }
     }
