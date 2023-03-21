@@ -4,7 +4,7 @@
 add_action('admin_menu', 'woocommerce_cart_view_admin_stuff', 99);
 
 function woocommerce_cart_view_admin_stuff(){
-	add_options_page("View Carts", "View Carts", "publish_pages", "View Carts", "woocommerce_cart_admin_view");
+	add_menu_page("View Carts", "View Carts", "publish_pages", "View Carts", "woocommerce_cart_admin_view");
 }
 
 function woocommerce_cart_admin_view(){
