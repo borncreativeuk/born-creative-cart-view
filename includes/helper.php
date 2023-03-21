@@ -39,12 +39,12 @@ function get_carts_information()
 
             if (!empty($array)) {
                 //     // we have a cart
-                echo '<tr><td><pre>';
-                print_r($array);
-                echo '</pre></td><td></td></tr>';
+                // echo '<tr><td><pre>';
+                // print_r($array);
+                // echo '</pre></td><td></td></tr>';
 
                 $key_name = array_keys($array);
-                $cart = $key_name[0];
+                $cart = $array[$key_name];
 
                 echo "<tr><td>" . $cart['quantity'] . "</td><td></td></tr>";
 
