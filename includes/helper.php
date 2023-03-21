@@ -35,16 +35,18 @@ function get_carts_information()
         // do we have actual cart datas?
         $datas = unserialize($session->session_value);
         if (!empty($datas)) {
-            $cart = unserialize($datas['cart']);
+            $array = unserialize($datas['cart']);
 
-            if (!empty($cart)) {
+            if (!empty($array)) {
                 //     // we have a cart
                 echo '<tr><td><pre>';
-                print_r($cart);
+                print_r($array);
                 echo '</pre></td><td></td></tr>';
 
-                $key_name = array_keys($cart);
-                echo "<tr><td>" . $key_name[0] . "</td><td></td></tr>";
+                $key_name = array_keys($array);
+                $cart = $key_name[0];
+
+                echo "<tr><td>" . $cart['quantity'] . "</td><td></td></tr>";
 
                 // echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
 
