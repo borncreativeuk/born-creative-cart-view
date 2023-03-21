@@ -39,15 +39,19 @@ function get_carts_information()
 
             if (!empty($array)) {
                 //     // we have a cart
-                // echo '<tr><td><pre>';
-                // print_r($array);
-                // echo '</pre></td><td></td></tr>';
-
+ 
                 $temp = array_keys($array);
                 $key = $temp[0];
-                // $cart = $array[$key_name];
+                $cart = $array[$key];
 
-                echo "<tr><td>" . $key . "</td><td></td></tr>";
+                echo "<tr>";
+                echo "<td>" . $cart . "</td>";
+                echo '<td><pre>';
+                print_r($cart);
+                echo '</pre></td>';
+                echo "</tr>";
+
+              
 
                 // echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
 
