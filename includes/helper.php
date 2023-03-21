@@ -33,12 +33,12 @@ function get_carts_information()
     foreach ($result as $session) {
         // do we have actual cart datas?
         $datas = unserialize($session->session_value);
-        $cart = unserialize($datas->cart);
+        $cart = unserialize($datas['cart']);
 
         echo '<pre>';
         print_r($cart);
         echo '</pre>';
-        
+
         if (!empty($cart)) {
             //     // we have a cart
             //     // show it
