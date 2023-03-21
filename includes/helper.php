@@ -24,6 +24,7 @@ function get_carts_information()
     // carts are in woocommerce_sessions table
     // first we need to get that whole table.
 
+    echo '<h2>Carts</h2>';
     $table_name = $wpdb->prefix . 'woocommerce_sessions';
     $result = $wpdb->get_results("SELECT * FROM $table_name");
 
