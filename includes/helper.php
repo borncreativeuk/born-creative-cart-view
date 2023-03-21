@@ -34,27 +34,23 @@ function get_carts_information()
     foreach ($result as $session) {
         // do we have actual cart datas?
         $datas = unserialize($session->session_value);
-        $cart = unserialize($datas['cart']);
+        if (!empty($datas)) {
+            $cart = unserialize($datas['cart']);
 
+            if (!empty($cart)) {
+                //     // we have a cart
+                echo '<tr><td><pre>';
+                print_r($cart);
+                echo '</pre></td><td></td></tr>';
 
+                $key_name = array_keys($cart);
+                echo "<tr><td>" . $key_name[0] . "</td><td></td></tr>";
 
-        if (!empty($cart)) {
-            //     // we have a cart
-            //     // show it
-            //     echo '<pre>' . print_r($datas->cart, true) . '</pre>';
-            echo '<tr><td><pre>';
-            print_r($cart);
-            echo '</pre></td><td></td></tr>';
+                // echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
 
-            $key_name = array_keys($cart);
-          
-            echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
+                // $product = wc_get_product( $cart[$key_name[0]]);
 
-            // $product = wc_get_product( $cart[$key_name[0]]);
-
-            // echo "<tr><td>" $product->get_name() . "</td><td>" .$cart[$key_name[0]]['quantity'] . "</td></tr>" ;
-
-
+            }
         }
     }
     echo "</table>";
