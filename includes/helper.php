@@ -45,10 +45,9 @@ function get_carts_information()
                 $cart = $array[$key];
 
                 echo "<tr>";
-                echo "<td>" . $cart . "</td>";
-                echo '<td><pre>';
-                print_r($cart);
-                echo '</pre></td>';
+                echo "<td>" . $cart['product_id'] . "</td>";
+                echo "<td>" . $cart['quantity'] . "</td>";
+                echo "<td>" . $cart['line_total'] . "</td>";
                 echo "</tr>";
 
               
