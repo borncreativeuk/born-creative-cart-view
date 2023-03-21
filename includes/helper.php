@@ -48,9 +48,9 @@ function get_carts_information()
 
             $key_name = array_keys($cart);
             
-            $product = wc_get_product( $cart[$key_name[0]]);
+            // $product = wc_get_product( $cart[$key_name[0]]);
         
-            echo "<tr><td>" $product->get_name() . "</td><td>" .$cart[$key_name[0]]['quantity'] . "</td></tr>" ;
+            // echo "<tr><td>" $product->get_name() . "</td><td>" .$cart[$key_name[0]]['quantity'] . "</td></tr>" ;
            
 
         }
