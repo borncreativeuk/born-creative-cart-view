@@ -30,9 +30,9 @@ function get_carts_information()
 
     foreach ($result as $session) {
         // do we have actual cart datas?
-
+        $datas = unserialize($session->session_value);
         echo '<pre>';
-        print_r($session->session_value);
+        print_r($datas);
         echo '</pre>';
 
         // $datas = unserialize($session->session_value);
