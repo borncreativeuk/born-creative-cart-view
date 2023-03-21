@@ -30,6 +30,7 @@ function get_carts_information()
     $table_name = $wpdb->prefix . 'woocommerce_sessions';
     $result = $wpdb->get_results("SELECT * FROM $table_name");
 
+    echo "<table>";
     foreach ($result as $session) {
         // do we have actual cart datas?
         $datas = unserialize($session->session_value);
@@ -44,6 +45,15 @@ function get_carts_information()
             echo '<pre>';
             print_r($cart);
             echo '</pre>';
+
+            $key_name = array_keys($cart);
+            
+            $product = wc_get_product( $cart[$key_name[0]]);
+        
+            echo "<tr><td>" $product->get_name() . "</td><td>" .$cart[$key_name[0]]['quantity'] . "</td></tr>" ;
+           
+
         }
     }
+    echo "</table>";
 }
