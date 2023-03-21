@@ -31,7 +31,7 @@ function get_carts_information()
     $result = $wpdb->get_results("SELECT * FROM $table_name");
 
     echo "<table>";
-    echo "<tr><td>Product</td><td>Quantity</td><td>Total</td></tr>";
+    echo "<tr><td>Product ID</td><td>Product Name</td><td>Quantity</td><td>Total</td></tr>";
     foreach ($result as $session) {
         // do we have actual cart datas?
         $datas = unserialize($session->session_value);
@@ -46,7 +46,8 @@ function get_carts_information()
                 $cart = $array[$key];
                 $product = wc_get_product($cart['product_id']);
                 echo "<tr>";
-                echo "<td>(" . $cart['product_id'] . ") " . $product->get_name() . "</td>";
+                echo "<td>" . $cart['product_id'] . "</td>";
+                echo "<td>". $product->get_name() . "</td>";
                 echo "<td>" . $cart['quantity'] . "</td>";
                 echo "<td>" . $cart['line_total'] . "</td>";
                 echo "</tr>";
