@@ -35,14 +35,15 @@ function get_carts_information()
         $datas = unserialize($session->session_value);
         $cart = unserialize($datas->cart);
 
-
+        echo '<pre>';
+        print_r($cart);
+        echo '</pre>';
+        
         if (!empty($cart)) {
             //     // we have a cart
             //     // show it
             //     echo '<pre>' . print_r($datas->cart, true) . '</pre>';
-            echo '<pre>';
-            print_r($cart);
-            echo '</pre>';
+            
         }
     }
 }
