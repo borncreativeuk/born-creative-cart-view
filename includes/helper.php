@@ -43,10 +43,11 @@ function get_carts_information()
                 // print_r($array);
                 // echo '</pre></td><td></td></tr>';
 
-                $key_name = array_keys($array);
+                $temp = array_keys($array);
+                $key = $temp[0];
                 // $cart = $array[$key_name];
 
-                echo "<tr><td>" . $key_name . "</td><td></td></tr>";
+                echo "<tr><td>" . $key . "</td><td></td></tr>";
 
                 // echo "<tr><td>" . $product->get_name() . "</td><td>" . $cart[$key_name[0]]['quantity'] . "</td></tr>";
 
