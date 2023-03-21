@@ -13,4 +13,5 @@
 
 <?php
 // TODO - output the table in here
+get_carts_information();
 
