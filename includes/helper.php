@@ -13,14 +13,14 @@ function borncreative_wc_cart_view_admin_stuff()
 		"borncreative_wc_cart_admin_view"
 	);
 	// Create a sub-menu under the top-level menu
-	add_submenu_page(
-		'born-creative',
-		'View Carts',
-		'View Carts',
-		'manage_options',
-		'view-carts',
-		'view_carts_menu_callback'
-	);
+// 	add_submenu_page(
+// 		'born-creative',
+// 		'View Carts',
+// 		'View Carts',
+// 		'manage_options',
+// 		'view-carts',
+// 		'view_carts_menu_callback'
+// 	);
 }
 
 function borncreative_wc_cart_admin_view()
