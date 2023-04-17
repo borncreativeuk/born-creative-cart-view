@@ -10,7 +10,7 @@ Quickly show all items currently in carts
 == Description ==
 Quickly show all items currently in carts
 
-1. Navigate to admin > View Carts
+1. Navigate to admin > Born Creative > View Carts
 
 
 
