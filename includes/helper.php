@@ -11,7 +11,7 @@ function borncreative_wc_create_menu() {
         'Born Creative',
         'publish_pages',
         'born-creative',
-        '',
+        'borncreative_wc_cart_admin_view',
         'dashicons-admin-generic',
         2
     );
