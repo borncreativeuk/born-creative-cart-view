@@ -1,7 +1,7 @@
 === borncreative_wc-cart-view ===
-Contributors: jonathansblog
+Contributors: born creative
 Tags: Featured Image
-Tested up to: 5.4
+Tested up to: 6.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
