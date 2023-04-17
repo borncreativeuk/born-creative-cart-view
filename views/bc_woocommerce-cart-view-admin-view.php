@@ -8,10 +8,10 @@
 
 ?>
 
-<h1><?php esc_html_e( 'woocommerce cart view.', 'woocommerce-cart-view'); ?></h1>
-<p><a href="https://jonathansblog.co.uk">jonathansblog.co.uk</a>
+<h1><?php esc_html_e( 'View Carts.', 'bc_woocommerce-cart-view'); ?></h1>
+<p><a href="https://www.born-creative.co.uk">born-creative.co.uk</a>
 
 <?php
 // TODO - output the table in here
-get_carts_information();
+bc_get_carts_information();
 

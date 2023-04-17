@@ -1,10 +1,10 @@
 <?php
   /*
-  Plugin name: woocommerce cart view
+  Plugin name: Born Creative woocommerce cart view
   Plugin URI: https://github.com/localhost8080/woocommerce-cart-view
   Description: plugin to see cart items in woocommerce baskets
-  Author: Jonathan Mitchell
-  Author URI: https://jonathansblog.co.uk/
+  Author: Born Creative
+  Author URI: https://www.born-creative.co.uk/
   Version: 0.1
   License: GPL v3 or later
   License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -24,13 +24,13 @@
   */
   
 // helper functions
-if (file_exists(WP_PLUGIN_DIR . '/woocommerce-cart-view/includes/helper.php')) {
-	require_once WP_PLUGIN_DIR . '/woocommerce-cart-view/includes/helper.php';
+if (file_exists(WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/helper.php')) {
+	require_once WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/helper.php';
 }
 
 // include admin page if present
-if (file_exists(WP_PLUGIN_DIR . '/woocommerce-cart-view/includes/woocommerce-cart-view-admin.php')) {
-	require_once WP_PLUGIN_DIR . '/woocommerce-cart-view/includes/woocommerce-cart-view-admin.php';
+if (file_exists(WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/bc_woocommerce-cart-view-admin.php')) {
+	require_once WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/bc_woocommerce-cart-view-admin.php';
 }
 
 
