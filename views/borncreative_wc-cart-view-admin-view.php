@@ -8,10 +8,10 @@
 
 ?>
 
-<h1><?php esc_html_e( 'View Carts.', 'bc_woocommerce-cart-view'); ?></h1>
+<h1><?php esc_html_e( 'View Carts.', 'borncreative_wc-cart-view'); ?></h1>
 <p><a href="https://www.born-creative.co.uk">born-creative.co.uk</a>
 
 <?php
 // TODO - output the table in here
-bc_get_carts_information();
+borncreative_wc_get_carts_information();
 

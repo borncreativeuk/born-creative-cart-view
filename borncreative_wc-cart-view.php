@@ -24,13 +24,13 @@
   */
   
 // helper functions
-if (file_exists(WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/helper.php')) {
-	require_once WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/helper.php';
+if (file_exists(WP_PLUGIN_DIR . '/borncreative_wc-cart-view/includes/helper.php')) {
+	require_once WP_PLUGIN_DIR . '/borncreative_wc-cart-view/includes/helper.php';
 }
 
 // include admin page if present
-if (file_exists(WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/bc_woocommerce-cart-view-admin.php')) {
-	require_once WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/includes/bc_woocommerce-cart-view-admin.php';
+if (file_exists(WP_PLUGIN_DIR . '/borncreative_wc-cart-view/includes/borncreative_wc-cart-view-admin.php')) {
+	require_once WP_PLUGIN_DIR . '/borncreative_wc-cart-view/includes/borncreative_wc-cart-view-admin.php';
 }
 
 

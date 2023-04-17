@@ -1,18 +1,18 @@
 <?php
 // helper functions
 
-add_action('admin_menu', 'bc_woocommerce_cart_view_admin_stuff', 99);
+add_action('admin_menu', 'borncreative_wc_cart_view_admin_stuff', 99);
 
-function bc_woocommerce_cart_view_admin_stuff()
+function borncreative_wc_cart_view_admin_stuff()
 {
-    add_menu_page("View Carts", "View Carts", "publish_pages", "View Carts", "bc_woocommerce_cart_admin_view");
+    add_menu_page("View Carts", "View Carts", "publish_pages", "View Carts", "borncreative_wc_cart_admin_view");
 }
 
-function bc_woocommerce_cart_admin_view()
+function borncreative_wc_cart_admin_view()
 {
     // include admin view
-    if (file_exists(WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/views/bc_woocommerce-cart-view-admin-view.php')) {
-        require_once WP_PLUGIN_DIR . '/bc_woocommerce-cart-view/views/bc_woocommerce-cart-view-admin-view.php';
+    if (file_exists(WP_PLUGIN_DIR . '/borncreative_wc-cart-view/views/borncreative_wc-cart-view-admin-view.php')) {
+        require_once WP_PLUGIN_DIR . '/borncreative_wc-cart-view/views/borncreative_wc-cart-view-admin-view.php';
     }
 }
 
@@ -20,7 +20,7 @@ function bc_woocommerce_cart_admin_view()
 
 
 
-function bc_get_carts_information()
+function borncreative_wc_get_carts_information()
 {
     global $wpdb;
     // carts are in woocommerce_sessions table
