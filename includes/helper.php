@@ -1,12 +1,34 @@
 <?php
 // helper functions
 
-add_action('admin_menu', 'borncreative_wc_cart_view_admin_stuff', 99);
 
-function borncreative_wc_cart_view_admin_stuff()
-{
-    add_menu_page("View Carts", "View Carts", "publish_pages", "View Carts", "borncreative_wc_cart_admin_view");
+
+// Function to create the new menu and sub-menu
+function borncreative_wc_create_menu() {
+    // Create a new top-level menu item
+    add_menu_page(
+        'Born Creative',
+        'Born Creative',
+        'publish_pages',
+        'born-creative',
+        '',
+        'dashicons-admin-generic',
+        2
+    );
+    
+    // Create a sub-menu under the top-level menu
+    add_submenu_page(
+        'born-creative',
+        'View Carts',
+        'View Carts',
+        'publish_pages',
+        'view-carts',
+        'borncreative_wc_cart_admin_view'
+    );
 }
+add_action('admin_menu', 'borncreative_wc_create_menu', 99);
+
+
 
 function borncreative_wc_cart_admin_view()
 {
@@ -15,10 +37,6 @@ function borncreative_wc_cart_admin_view()
         require_once WP_PLUGIN_DIR . '/borncreative_wc-cart-view/views/borncreative_wc-cart-view-admin-view.php';
     }
 }
-
-
-
-
 
 function borncreative_wc_get_carts_information()
 {
