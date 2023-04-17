@@ -12,8 +12,7 @@ function borncreative_wc_create_menu() {
         'publish_pages',
         'born-creative',
         'borncreative_wc_cart_admin_view',
-        'dashicons-admin-generic',
-        2
+        'dashicons-admin-generic'
     );
     
     // Create a sub-menu under the top-level menu
