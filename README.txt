@@ -18,7 +18,7 @@ Quickly show all items currently in carts
 
 1. Add the plugin's directory in the WordPress' plugin directory.
 1. Activate the plugin.
-1. Navigate to admin > View Carts
+1. Navigate to admin > Born Creative > View Carts
 
 
 == Changelog ==
