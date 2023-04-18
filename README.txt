@@ -1,5 +1,5 @@
 === borncreative_wc-cart-view ===
-Contributors: born creative
+Contributors: Born Creative
 Tags: Featured Image
 Tested up to: 6.2
 License: GPLv3 or later
@@ -16,7 +16,7 @@ Quickly show all items currently in carts
 
 == Installation ==
 
-1. Add the plugin's directory in the WordPress' plugin directory.
+1. Add the plugin from the WordPress plugin directory.
 1. Activate the plugin.
 1. Navigate to admin > Born Creative > View Carts
 
