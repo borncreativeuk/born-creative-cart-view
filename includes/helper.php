@@ -29,8 +29,8 @@ function borncreative_wc_cart_view_admin_stuff()
 function borncreative_wc_cart_admin_view()
 {
     // include admin view
-    if (file_exists(plugin_dir_path(__FILE__) . '../views/borncreative_wc-cart-view-admin-view.php')) {
-        require_once plugin_dir_path(__FILE__) . '../views/borncreative_wc-cart-view-admin-view.php';
+    if (file_exists(plugin_dir_path(__FILE__) . '../views/born-creative-wc-cart-view-admin-view.php')) {
+        require_once plugin_dir_path(__FILE__) . '../views/born-creative-wc-cart-view-admin-view.php';
     }
 }
 

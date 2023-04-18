@@ -8,7 +8,7 @@
 
 ?>
 
-<h1><?php esc_html_e( 'View Carts.', 'borncreative_wc-cart-view'); ?></h1>
+<h1><?php esc_html_e( 'View Carts.', 'born-creative-wc-cart-view'); ?></h1>
 <p><a href="https://www.born-creative.co.uk">born-creative.co.uk</a>
 
 <?php

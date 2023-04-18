@@ -1,7 +1,7 @@
 <?php
 /*
   Plugin name: Born Creative Cart View
-  Plugin URI: https://github.com/borncreativeuk/borncreative_wc-cart-view
+  Plugin URI: https://github.com/borncreativeuk/born-creative-wc-cart-view
   Description: plugin to see cart items in woocommerce baskets
   Author: Born Creative
   Author URI: https://www.born-creative.co.uk/
@@ -29,6 +29,6 @@ if (file_exists( plugin_dir_path(__FILE__) . '/includes/helper.php')) {
 }
 
 // include admin page if present
-if (file_exists( plugin_dir_path(__FILE__) . '/includes/borncreative_wc-cart-view-admin.php')) {
-	require_once  plugin_dir_path(__FILE__) . '/includes/borncreative_wc-cart-view-admin.php';
+if (file_exists( plugin_dir_path(__FILE__) . '/includes/born-creative-wc-cart-view-admin.php')) {
+	require_once  plugin_dir_path(__FILE__) . '/includes/born-creative-wc-cart-view-admin.php';
 }
