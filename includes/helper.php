@@ -23,7 +23,7 @@ function borncreative_wc_cart_view_admin_stuff()
 {
 
 	// Create a top-level menu if it doesnt already exist
-	if (!menu_page_url('contacts-parent-menu', false)) {
+	if (!menu_page_url('born-creative', false)) {
 		add_menu_page(
 			'Born Creative',
 			'Born Creative',
