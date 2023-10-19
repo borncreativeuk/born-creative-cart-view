@@ -33,7 +33,7 @@ function borncreative_wc_cart_view_admin_stuff()
 
 	// Create a sub-menu under the top-level menu
 	add_submenu_page(
-		'Born Creative',
+		'born-creative',
 		'Born Creative',
 		'Born Creative',
 		'edit_others_posts',
