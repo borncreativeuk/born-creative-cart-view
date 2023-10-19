@@ -41,7 +41,7 @@ function borncreative_wc_cart_view_admin_stuff()
 	// 	'borncreative_admin_view'
 	// );
 
-	$menu_slug = 'wpdocs-orders-slug';
+	$menu_slug = 'born-creative';
 	add_menu_page(
 		'Born Creative',
 		'Born Creative',
@@ -51,7 +51,7 @@ function borncreative_wc_cart_view_admin_stuff()
 		'dashicons-admin-generic',
 		2
 	);
-	
+
 	add_submenu_page(
 		$menu_slug,
 		'Born Creative',
