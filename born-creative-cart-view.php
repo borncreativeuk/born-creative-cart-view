@@ -28,7 +28,4 @@ if (file_exists( plugin_dir_path(__FILE__) . '/includes/helper.php')) {
 	require_once  plugin_dir_path(__FILE__) . '/includes/helper.php';
 }
 
-// include admin page if present
-if (file_exists( plugin_dir_path(__FILE__) . '/includes/born-creative-wc-cart-view-admin.php')) {
-	require_once  plugin_dir_path(__FILE__) . '/includes/born-creative-wc-cart-view-admin.php';
-}
+

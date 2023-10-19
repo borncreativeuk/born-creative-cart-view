@@ -26,7 +26,7 @@ function borncreative_wc_cart_view_admin_stuff()
 		'Born Creative',
 		'edit_others_posts',
 		'born-creative',
-		'borncreative_wc_cart_admin_view',
+		'borncreative_admin_view',
 		'dashicons-admin-generic',
 		2
 	);
@@ -47,6 +47,14 @@ function borncreative_wc_cart_admin_view()
 	// include admin view
 	if (file_exists(plugin_dir_path(__FILE__) . '../views/born-creative-wc-cart-view-admin-view.php')) {
 		require_once plugin_dir_path(__FILE__) . '../views/born-creative-wc-cart-view-admin-view.php';
+	}
+}
+
+function borncreative_admin_view()
+{
+	// include admin view
+	if (file_exists(plugin_dir_path(__FILE__) . '../views/born-creative-view.php')) {
+		require_once plugin_dir_path(__FILE__) . '../views/born-creative-view.php';
 	}
 }
 
