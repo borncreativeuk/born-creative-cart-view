@@ -1,6 +1,6 @@
 === Born Creative Cart View ===
 Contributors: Born Creative
-Tags: Featured Image
+Tags: Cart
 Stable tag: 1.0
 Tested up to: 6.2
 License: GPLv3 or later
