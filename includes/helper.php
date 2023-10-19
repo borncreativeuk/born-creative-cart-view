@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly      
+
 // helper functions
 
 add_action('admin_menu', 'borncreative_wc_cart_view_admin_stuff', 99);
@@ -24,7 +26,7 @@ function borncreative_wc_cart_view_admin_stuff()
 		'Born Creative',
 		'edit_others_posts',
 		'born-creative',
-		'',
+		'borncreative_wc_cart_admin_view',
 		'dashicons-admin-generic',
 		2
 	);
@@ -61,8 +63,8 @@ function borncreative_wc_get_carts_information()
 
 		// use a prepared statement to prevent sqli
 		$table_name = $wpdb->prefix . "woocommerce_sessions";
-		$result = $wpdb->get_results( 
-			$wpdb->prepare( "SELECT * FROM %i", $table_name) 
+		$result = $wpdb->get_results(
+			$wpdb->prepare("SELECT * FROM %i", $table_name)
 		);
 
 		echo "<table>";

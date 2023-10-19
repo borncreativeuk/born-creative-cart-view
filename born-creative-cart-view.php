@@ -5,7 +5,7 @@
   Description: plugin to see cart items in woocommerce baskets
   Author: Born Creative
   Author URI: https://www.born-creative.co.uk/
-  Version: 0.1
+  Version: 1.0
   License: GPL v3 or later
   License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
