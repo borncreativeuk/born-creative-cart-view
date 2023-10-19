@@ -21,45 +21,29 @@ if (!function_exists('borncreative_is_woocommerce_activated')) {
 
 function borncreative_wc_cart_view_admin_stuff()
 {
-	// add_menu_page(
-	// 	'Born Creative',
-	// 	'Born Creative',
-	// 	'edit_others_posts',
-	// 	'born-creative',
-	// 	'borncreative_admin_view',
-	// 'dashicons-admin-generic',
-	// 2
-	// );
+
 
 	// // Create a sub-menu under the top-level menu
-	// add_submenu_page(
-	// 	'born-creative',
-	// 	'Born Creative',
-	// 	'Born Creative',
-	// 	'edit_others_posts',
-	// 	'born-creative',
-	// 	'borncreative_admin_view'
-	// );
 
-	$menu_slug = 'born-creative';
 	add_menu_page(
 		'Born Creative',
 		'Born Creative',
 		'edit_others_posts',
-		$menu_slug,
+		'born-creative',
 		false,
 		'dashicons-admin-generic',
 		2
 	);
 
 	add_submenu_page(
-		$menu_slug,
+		'born-creative',
 		'Born Creative',
 		'Born Creative',
 		'edit_others_posts',
-		$menu_slug,
+		'born-creative',
 		'borncreative_admin_view'
 	);
+
 
 	// Create a sub-menu under the top-level menu
 	add_submenu_page(
