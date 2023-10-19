@@ -64,14 +64,16 @@ function borncreative_wc_cart_admin_view()
 	}
 }
 
-function borncreative_admin_view()
-{
-	// include admin view
-	if (file_exists(plugin_dir_path(__FILE__) . '../views/born-creative-view.php')) {
-		require_once plugin_dir_path(__FILE__) . '../views/born-creative-view.php';
+// create function if its not already defined (admin view function can appear from other plugins)
+if (!function_exists('borncreative_admin_view')) {
+	function borncreative_admin_view()
+	{
+		// include admin view
+		if (file_exists(plugin_dir_path(__FILE__) . '../views/born-creative-view.php')) {
+			require_once plugin_dir_path(__FILE__) . '../views/born-creative-view.php';
+		}
 	}
 }
-
 function borncreative_wc_get_carts_information()
 {
 	global $wpdb;
