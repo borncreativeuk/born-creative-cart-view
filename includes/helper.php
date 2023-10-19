@@ -29,19 +29,19 @@ function borncreative_wc_cart_view_admin_stuff()
 			'Born Creative',
 			'edit_others_posts',
 			'born-creative',
-			false,
+			'borncreative_admin_view',
 			'dashicons-admin-generic',
 			2
 		);
 		// set our 'main' page
-		add_submenu_page(
-			'born-creative',
-			'Born Creative',
-			'Born Creative',
-			'edit_others_posts',
-			'born-creative',
-			'borncreative_admin_view'
-		);
+		// add_submenu_page(
+		// 	'born-creative',
+		// 	'Born Creative',
+		// 	'Born Creative',
+		// 	'edit_others_posts',
+		// 	'born-creative',
+		// 	'borncreative_admin_view'
+		// );
 	}
 
 
