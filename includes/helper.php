@@ -74,6 +74,7 @@ if (!function_exists('borncreative_admin_view')) {
 		}
 	}
 }
+
 function borncreative_wc_get_carts_information()
 {
 	global $wpdb;
