@@ -11,7 +11,7 @@ Quickly show all items currently in carts
 == Description ==
 Quickly show all items currently in carts
 
-1. Navigate to admin > View Carts
+1. Navigate to admin > Born Creative > View Carts
 
 
 
@@ -31,6 +31,7 @@ Plugin name corrected
 esc_html() functions added to echoed output
 query whether WooCommerce is activated
 use prepare statements on sql query to prevent sqli
+
 
 = 0.1 =
 Initial Release
